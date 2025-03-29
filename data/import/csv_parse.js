@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import { parse } from 'csv-parse/sync';
 
-const CSV_FILE = 'data/course_data.csv';
-const OUTPUT_FILE = 'data/courses_all.json';
+const CSV_FILE = 'data/import/course_data_2.csv';
+const OUTPUT_FILE = 'data/import/courses_all.json';
 
 const csv_data = fs.readFileSync(CSV_FILE, { encoding: 'utf8', flag: 'r' });
 
@@ -32,6 +32,7 @@ for (let o of records) {
         tags: [o['Tags']],
         semesters: semToInt(o['Fall/Spring']),
         prereqs: [o['Prereqs']],
+        specialization: o['Course Area'],
     });
 }
 

@@ -6,4 +6,5 @@ semesters: Integer,
 prereqs: [CourseId],
 tags: [String],
 type: [String],
+specialization: String
 }

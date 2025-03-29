@@ -1,0 +1,2265 @@
+[
+    {
+        "name": "Research and Entrepreneurship in Computing",
+        "code": "CS101",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": "NULL"
+    },
+    {
+        "name": "Introduction to Computer Science",
+        "code": "CS115",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": "NULL"
+    },
+    {
+        "name": "Discrete Structures",
+        "code": "CS135",
+        "credits": 4,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": "NULL"
+    },
+    {
+        "name": "Introduction to Web Programming and Project Development",
+        "code": "CS146",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["Senior"],
+        "specialization": "Application Development"
+    },
+    {
+        "name": "Introduction to Computer Science Honors",
+        "code": "CS181",
+        "credits": 4,
+        "tags": ["Extra"],
+        "semesters": 2,
+        "prereqs": ["Permission"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Computer Science",
+        "code": "CS188",
+        "credits": 1,
+        "tags": ["Extra"],
+        "semesters": 1,
+        "prereqs": ["Pinnacle"],
+        "specialization": ""
+    },
+    {
+        "name": "Data Structures",
+        "code": "CS284",
+        "credits": 4,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["CS115"],
+        "specialization": ""
+    },
+    {
+        "name": "Theory of Computation",
+        "code": "CS334",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 0,
+        "prereqs": ["CS135 AND CS385"],
+        "specialization": ""
+    },
+    {
+        "name": "Software Development Process",
+        "code": "CS347",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS115 AND CS284"],
+        "specialization": ""
+    },
+    {
+        "name": "Creative Problem Solving and Team Programming",
+        "code": "CS370",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS385"],
+        "specialization": ""
+    },
+    {
+        "name": "Computer Architecture and Organization",
+        "code": "CS382",
+        "credits": 4,
+        "tags": ["Core"],
+        "semesters": 0,
+        "prereqs": ["CS284"],
+        "specialization": ""
+    },
+    {
+        "name": "Algorithms",
+        "code": "CS385",
+        "credits": 4,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["CS181 OR 284"],
+        "specialization": ""
+    },
+    {
+        "name": "Systems Programming",
+        "code": "CS392",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 1,
+        "prereqs": ["CS382 AND CS385"],
+        "specialization": ""
+    },
+    {
+        "name": "Security, Privacy, and Society",
+        "code": "CS396",
+        "credits": 4,
+        "tags": ["Core"],
+        "semesters": 0,
+        "prereqs": ["CS392"],
+        "specialization": ""
+    },
+    {
+        "name": "Senior Design I",
+        "code": "CS423",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 0,
+        "prereqs": ["CS385 AND 90Credits"],
+        "specialization": ""
+    },
+    {
+        "name": "Senior Design II",
+        "code": "CS424",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 1,
+        "prereqs": ["CS423"],
+        "specialization": ""
+    },
+    {
+        "name": "Database Management Systems",
+        "code": "CS442",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS385"],
+        "specialization": ""
+    },
+    {
+        "name": "Computer Architecture",
+        "code": "CS488",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS382"],
+        "specialization": ""
+    },
+    {
+        "name": "Operating Systems",
+        "code": "CS492",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS392"],
+        "specialization": ""
+    },
+    {
+        "name": "Principles of Programming Languages",
+        "code": "CS496",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 1,
+        "prereqs": ["CS496"],
+        "specialization": ""
+    },
+    {
+        "name": "Discrete Mathematics for Cryptography",
+        "code": "CS503",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS135 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Cloud Computing",
+        "code": "CS524",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS492 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Enterprise and Cloud Computing",
+        "code": "CS526",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "3D Computer Vision",
+        "code": "CS532",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Interactive Computer Graphics",
+        "code": "CS537",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Real-Time Rendering, Gaming, and Similations Programming",
+        "code": "CS539",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS537 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Artificial Intelligence",
+        "code": "CS541",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["MA222 AND MA232 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Health Informatics",
+        "code": "CS544",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Enterprise Software Architecture and Design",
+        "code": "CS548",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Natural Language Processing",
+        "code": "CS557",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Computer Vision",
+        "code": "CS558",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["MA232 AND CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Machine Learning: Fundamentals and Applications",
+        "code": "CS559",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["MA222 AND MA232 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Statistical Machine Learning",
+        "code": "CS560",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS559 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Database Management Systems II",
+        "code": "CS562",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS442 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Smartphone and Mobile Security",
+        "code": "CS566",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Object-Oriented Analysis and Design",
+        "code": "CS574",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Systems Security",
+        "code": "CS576",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["CS392 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Reverse Engineering and Application Analysis",
+        "code": "CS577",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["CS392 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Privacy in a Networked World",
+        "code": "CS578",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["(CS579 OR CS594) AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Foundations of Cryptography",
+        "code": "CS579",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS503 AND CS385 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Causal Inference",
+        "code": "CS582",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Deep Learning",
+        "code": "CS583",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["MA232 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Natural Language Processing",
+        "code": "CS584",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["MA232 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Enterprise and Cloud Security",
+        "code": "CS594",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["(CS526 OR CS548) AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Information Security and the Law",
+        "code": "CS595",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["(CS579 OR CS594) AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Windows Programming",
+        "code": "CS596",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS392 AND Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "User Experience Design and Programming",
+        "code": "CS597",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Algorithmic Complexity",
+        "code": "CS601",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS334 AND CS385"],
+        "specialization": ""
+    },
+    {
+        "name": "Data Management and Exploration on the Web",
+        "code": "CS609",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "System Administration",
+        "code": "CS615",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["Junior AND Permission"],
+        "specialization": ""
+    },
+    {
+        "name": "Formal Verification of Software",
+        "code": "CS643",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["CS392"],
+        "specialization": ""
+    },
+    {
+        "name": "Forensic Analysis",
+        "code": "CS665",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS392"],
+        "specialization": ""
+    },
+    {
+        "name": "Advance Topics in Systems and Security",
+        "code": "CS676",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS576"],
+        "specialization": ""
+    },
+    {
+        "name": "Parallel Programming for Many Core Processors",
+        "code": "CS677",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 1,
+        "prereqs": ["CS 392"],
+        "specialization": ""
+    },
+    {
+        "name": "Cryptographic Protocols",
+        "code": "CS693",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 0,
+        "prereqs": ["CS 579"],
+        "specialization": ""
+    },
+    {
+        "name": "Database Security",
+        "code": "CS696",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Special Topics in CS",
+        "code": "CS810",
+        "credits": 3,
+        "tags": ["TechE"],
+        "semesters": 2,
+        "prereqs": ["Junior"],
+        "specialization": ""
+    },
+    {
+        "name": "Mechanics",
+        "code": "PEP111",
+        "credits": 3,
+        "tags": ["Science1"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Electricity and Magnetism",
+        "code": "PEP112",
+        "credits": 3,
+        "tags": ["Science2"],
+        "semesters": 2,
+        "prereqs": ["MA122,PEP111"],
+        "specialization": ""
+    },
+    {
+        "name": "Physics Lab I for Scientists",
+        "code": "PEP221",
+        "credits": 1,
+        "tags": ["ScienceL"],
+        "semesters": 2,
+        "prereqs": ["PEP111"],
+        "specialization": ""
+    },
+    {
+        "name": "General Chemistry I",
+        "code": "CH115",
+        "credits": 3,
+        "tags": ["Science1"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "General Chemistry II",
+        "code": "CH116",
+        "credits": 3,
+        "tags": ["Science2"],
+        "semesters": 2,
+        "prereqs": ["CH115"],
+        "specialization": ""
+    },
+    {
+        "name": "General Chemistry Laboratory I",
+        "code": "CH117",
+        "credits": 1,
+        "tags": ["ScienceL"],
+        "semesters": 2,
+        "prereqs": ["CH115"],
+        "specialization": ""
+    },
+    {
+        "name": "Biology and Biotechnology",
+        "code": "BIO181",
+        "credits": 3,
+        "tags": ["Science2"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Biology and Biotechnology Laboratory",
+        "code": "BIO182",
+        "credits": 1,
+        "tags": ["ScienceL"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Differential Calculus",
+        "code": "MA121",
+        "credits": 2,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Integral Calculus",
+        "code": "MA122",
+        "credits": 2,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["MA121"],
+        "specialization": ""
+    },
+    {
+        "name": "Vectors and Matrices",
+        "code": "MA125",
+        "credits": 2,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["MA122"],
+        "specialization": ""
+    },
+    {
+        "name": "Multivariable Calculus I",
+        "code": "MA126",
+        "credits": 2,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["MA125"],
+        "specialization": ""
+    },
+    {
+        "name": "Probability and Statistics",
+        "code": "MA222",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["MA124 OR MA126"],
+        "specialization": ""
+    },
+    {
+        "name": "Linear Algebra",
+        "code": "MA 232",
+        "credits": 3,
+        "tags": ["MathsciE"],
+        "semesters": 0,
+        "prereqs": ["30Credits"],
+        "specialization": ""
+    },
+    {
+        "name": "Intermediate Statistics",
+        "code": "MA331",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["MA222"],
+        "specialization": ""
+    },
+    {
+        "name": "Writing and Communications Colloquium",
+        "code": "HASS103",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Knoweledge, Nature, Culture",
+        "code": "HASS105",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "First Year Experience",
+        "code": "PRV101",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Frontiers of Technology: AI and Machine Learning",
+        "code": "PRV201",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Frontiers of Technology: Data Science and Analytics",
+        "code": "PRV202",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Frontiers of Technology: Biotechnology",
+        "code": "PRV203",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Frontiers of Technology: Sustainability",
+        "code": "PRV204",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Frontiers of Technology: Quantum Technology",
+        "code": "PRV205",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Entrepreneuial Thinking",
+        "code": "MGT103",
+        "credits": 1,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Ethical Issues in Science and Technology",
+        "code": "HPL455",
+        "credits": 2,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Computers and Society",
+        "code": "HSS371",
+        "credits": 3,
+        "tags": ["Core"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Hisotry of European Music I",
+        "code": "HMU101",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Hisotry of European Music II",
+        "code": "HMU102",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Music Appreciation I",
+        "code": "HMU192",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Music Appreciation II",
+        "code": "HMU193",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["HMU192"],
+        "specialization": ""
+    },
+    {
+        "name": "History of American Popular Music",
+        "code": "HMU194",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "History of Electronic and Experimental Music",
+        "code": "HMU195",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Music of Eastern Mediterranean",
+        "code": "HMU350",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "History of Jazz",
+        "code": "HMU394",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Music and Technology",
+        "code": "HMU494",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["Permission"],
+        "specialization": ""
+    },
+    {
+        "name": "History of Art: Prehistory to Modern Era",
+        "code": "HAR180",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Art History and Theory",
+        "code": "HAR280",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "History of Photography",
+        "code": "HAR281",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "History of Middle Eastern Art",
+        "code": "HAR282",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Technology and the Landscape",
+        "code": "HAR372",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Media Culture and Theory",
+        "code": "HAR380",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Contemporary Art",
+        "code": "HAR385",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Art and Technology",
+        "code": "HAR494",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["Permission"],
+        "specialization": ""
+    },
+    {
+        "name": "Latin American Literature and Culture",
+        "code": "LSP305",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["LSP201 AND LSP202"],
+        "specialization": ""
+    },
+    {
+        "name": "Spanish Literature and Culture",
+        "code": "LSP310",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["LSP201 AND LSP202"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Theater",
+        "code": "HTH201",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Cinema",
+        "code": "HTH221",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Intro to Science & Technology Studies",
+        "code": "HST120",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Failure",
+        "code": "HST140",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Science Communication",
+        "code": "HST160",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Medical Humanities",
+        "code": "HST250",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Science and Media",
+        "code": "HST320",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Visualizing Society",
+        "code": "HST325",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Environmental Communication",
+        "code": "HST330",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Global Public Health",
+        "code": "HST340",
+        "credits": null,
+        "tags": [""],
+        "prereqs": ["Softmore"],
+        "specialization": ""
+    },
+    {
+        "name": "Medical Anthropology",
+        "code": "HST350",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Technology & Medicine",
+        "code": "HST355",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Humans and the Environment",
+        "code": "HST360",
+        "credits": null,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["HHS130 OR HHS371 OR HST120"],
+        "specialization": ""
+    },
+    {
+        "name": "Biology and Society",
+        "code": "HST 370",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Standardization and Society",
+        "code": "HST380",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Internet Protocols and Politics",
+        "code": "HST385",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Anthropology of Technology",
+        "code": "HST390",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Science Writing",
+        "code": "HST401",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Computing and Capitalism",
+        "code": "HST404",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["HST120 OR HSS371"],
+        "specialization": ""
+    },
+    {
+        "name": "Nuclear Energy and Society",
+        "code": "HST411",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The Nuclear Era",
+        "code": "HST 415",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The History of Stevens",
+        "code": "HST450",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "War and Science",
+        "code": "HST470",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in STS",
+        "code": "HST495",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Urban Studies",
+        "code": "HSS121",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Intro to Poli Sci I",
+        "code": "HSS127",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Anthropology",
+        "code": "HSS131",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Intro to Sociology",
+        "code": "HSS141",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Fundamentals of Psychology",
+        "code": "HSS175",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Cultural Anthropology",
+        "code": "HSS231",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Social Psychology",
+        "code": "HSS280",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Urban Policy",
+        "code": "HSS321",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Comparative Ethnic Culture",
+        "code": "HSS324",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Identity Politics and Legal Theory",
+        "code": "HSS325",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Developmental Psychology",
+        "code": "HSS330",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Biological Psychology",
+        "code": "HSS331",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Health Psychology",
+        "code": "HSS332",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Psychology of Prejudice",
+        "code": "HSS333",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Public Policy Analysis",
+        "code": "HSS360",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The US Congress",
+        "code": "HSS361",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Campaigns and Elections",
+        "code": "HSS362",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Political Theory",
+        "code": "HSS366",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Data Storytelling",
+        "code": "HSS370",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Social Choice Theory",
+        "code": "HSS373",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "History of Psychology",
+        "code": "HSS375",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Theories of Personality",
+        "code": "HSS376",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Sociology of Globalization",
+        "code": "HSS377",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "International Politics",
+        "code": "HSS379",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Leadership Studies",
+        "code": "HSS401",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Political Psychology and the Media",
+        "code": "HSS402",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Gender and Race in Science and Engineering",
+        "code": "HSS441",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Sociology of Science and Technology",
+        "code": "HSS458",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Psychology of Religion",
+        "code": "HSS477",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Psychology of Gender",
+        "code": "HSS478",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Sociology of Gender",
+        "code": "HSS479",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Freud and Jung",
+        "code": "HSS 489",
+        "credits": null,
+        "tags": [""],
+        "prereqs": ["HSS376"],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Social Science",
+        "code": "HSS496",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "US History to 1865",
+        "code": "HHS125",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "History of Science & Technology",
+        "code": "HHS130",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Survey of the Islamic World",
+        "code": "HHS135",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "African American Studies",
+        "code": "HSS325",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "US Constitutional Law II",
+        "code": "HHS373",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Speical Topics in Literature",
+        "code": "HLI105",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Western Literature: Classical Literature",
+        "code": "HLI113",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Western Literature: Middle Ages to the Present",
+        "code": "HLI114",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The English Language: Language of Ideas",
+        "code": "HLI115",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Analysis of Literary Forms",
+        "code": "HLI116",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Realist and Modern American Literature",
+        "code": "HLI118",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Images of Science in Literature",
+        "code": "HLI220",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Cinema",
+        "code": "HLI221",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "African-American Cinema",
+        "code": "HLI302",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Director as Auteur",
+        "code": "HLI305",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Afrofuturism",
+        "code": "HLI307",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Literature",
+        "code": "HLI312",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Wordsworth and English Romanticism",
+        "code": "HLI313",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "19th Century English Literature: Victorians",
+        "code": "HLI314",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Science Fiction",
+        "code": "HLI316",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Caribbean Literature and Culture",
+        "code": "HLI318",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Ethnicity and Literature",
+        "code": "HLI319",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Literature, Science and Technology",
+        "code": "HLI321",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Classical Mythology",
+        "code": "HLI330",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Shakespeare",
+        "code": "HLI331",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Chaucer: The Journey and the Dreams",
+        "code": "HLI334",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Shakespeare in the City",
+        "code": "HLI335",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Thoreau and Environmental Writing",
+        "code": "HLI338",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The Short Story",
+        "code": "HLI366",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "History of the English Language",
+        "code": "HLI337",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "19th Century English Literature: Romanticism",
+        "code": "HLI341",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Drama",
+        "code": "HLI342",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "British Fiction",
+        "code": "HLI344",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "A Survey of Dramatic Literature",
+        "code": "HLI345",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "James Baldwin",
+        "code": "HLI348",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "American Poetry to 1900",
+        "code": "HLI349",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Romanticism: Painting, Literature, Music",
+        "code": "HLI351",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The American Renaissance in Literature",
+        "code": "HLI352",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "American Culture",
+        "code": "HLI354",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "American Films & American Fiction",
+        "code": "HLI357",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "American Poetry: 20th Century",
+        "code": "HLI358",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Irish Literature",
+        "code": "HLI363",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Introduction to Journalism",
+        "code": "HLI370",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Survey of Latin American Literature",
+        "code": "HLI380",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Culture: Literature and Film",
+        "code": "HLI390",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Queer Fiction",
+        "code": "HLI391",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Creative Writing",
+        "code": "HLI408",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Rhetoric and Technical Writing",
+        "code": "HLI409",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Wanderers, Warriors, Sinners, and Saints: Medieval Literature",
+        "code": "HLI410",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Medieval Romances: Rise of the Individual",
+        "code": "HLI 412",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Literature by Women: The Tradition in English",
+        "code": "HLI413",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Literature and Empire",
+        "code": "HLI414",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The Bible as Literature",
+        "code": "HLI415",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "The Legend of King Arthur",
+        "code": "HLI416",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "English Literature: A Survey from Beowulf to the Restoration",
+        "code": "HLI417",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Literature and Critical Theory",
+        "code": "HLI418",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Power and Politics, Kinship and Kings I: Ancient to Renaissance",
+        "code": "HLI421",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "English Literature: Restoration (1660) to the Present",
+        "code": "HLI446",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Survey of British Literature",
+        "code": "HLI447",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Literature and the Arts",
+        "code": "HLI471",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The Novel in America",
+        "code": "HLI474",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Contemporary Culture: Literature and Film, 1950-the Present",
+        "code": "HLI476",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Seminar in Literature",
+        "code": "HLI495",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Theories of Human Nature",
+        "code": "HPL111",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["Sophomore"],
+        "specialization": ""
+    },
+    {
+        "name": "Eastern Philosophy",
+        "code": "HPL210",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Modern Philosophy",
+        "code": "HPL346",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Theories of Knowledge and Reality",
+        "code": "HPL347",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Philosophy of Science",
+        "code": "HPL368",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Philosophy of Technology",
+        "code": "HPL370",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "HPL380",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Logic",
+        "code": "HPL442",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "The Philosophy of Language",
+        "code": "HPL443",
+        "credits": null,
+        "tags": [""],
+        "semesters": 0,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Philosophy of Mind",
+        "code": "HPL444",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "The History of Philosophy",
+        "code": "HPL445",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Contemporary Philosophy",
+        "code": "HPL448",
+        "credits": null,
+        "tags": [""],
+        "semesters": 1,
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Philosophy of Law",
+        "code": "HPL449",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Global and International Ethics",
+        "code": "HPL450",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["Softmore"],
+        "specialization": ""
+    },
+    {
+        "name": "Bioethics",
+        "code": "HPL457",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Computability and Logic",
+        "code": "HPL458",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "The Philosophy of Social Science",
+        "code": "HPL459",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "American Philosophy",
+        "code": "HPL461",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Beginning Chinese I",
+        "code": "LCH101",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Beginning Chinese II",
+        "code": "LCH102",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 0,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Beginning French I",
+        "code": "LFR101",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Intermediate French II",
+        "code": "LFR202",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 1,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Beginning Spanish I",
+        "code": "LSP101",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Beginning Spanish II",
+        "code": "LSP102",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Intermediate Spanish I",
+        "code": "LSP201",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "Intermediate Spanish II",
+        "code": "LSP202",
+        "credits": 3,
+        "tags": ["HumanitiesE"],
+        "semesters": 2,
+        "prereqs": ["NULL"],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "",
+        "code": "",
+        "credits": null,
+        "tags": [""],
+        "prereqs": [""],
+        "specialization": ""
+    },
+    {
+        "name": "Organic Chemistry I",
+        "code": "CH 243",
+        "credits": null,
+        "tags": [""],
+        "prereqs": ["CH 116 AND CH 118"],
+        "specialization": ""
+    }
+]
