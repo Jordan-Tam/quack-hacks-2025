@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Header from './components/Header';
 import Course from './pages/Course';
+import Schedule from './pages/Schedule';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                 <Route path="/" exact element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/course/:courseCode" element={<Course />}></Route>
+                <Route path="/schedule" element={<Schedule />}></Route>
             </Routes>
         </div>
     );
