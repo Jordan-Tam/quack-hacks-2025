@@ -3,7 +3,10 @@ name: String,
 code: String,
 credits: Integer,
 semesters: Integer,
-prereqs: [CourseId],
+prereqs: {
+courses: [String],
+credits: Integer
+},
 tags: [String],
 type: [String],
 specialization: String
