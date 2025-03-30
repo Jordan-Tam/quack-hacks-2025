@@ -6,8 +6,9 @@ import bcrypt from 'bcrypt';
 const createUser = async (
     name,
     username,
+    email,
     password,
-    courses
+    completed_courses
 ) => {
 
     // Error checking "name"
@@ -18,6 +19,9 @@ const createUser = async (
         throw "createUser Error: name must be a string.";
     }
     name = name.trim();
+    if (name.length === 0) {
+        throw "createUser Error: name must not be a string that only contains spaces.";
+    }
 
     // Error checking "username"
     if (!username) {
@@ -27,6 +31,21 @@ const createUser = async (
         throw "createUser Error: username must be a string.";
     }
     username = username.trim();
+    if (username.length === 0) {
+        throw "createUser Error: username must not be a string that only contains spaces.";
+    }
+
+    // Error checking "email"
+    if (!email) {
+        throw "createUser Error: No email was supplied.";
+    }
+    if (typeof email !== "string") {
+        throw "createUser Error: email must be a string.";
+    }
+    email = email.trim();
+    if (!validator.isEmail(email)) {
+        throw "createUser Error: Invalid email.";
+    }
 
     // Error checking "password"
     if (!password) {
@@ -37,25 +56,25 @@ const createUser = async (
     }
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
     if (!passwordRegex.test(password)) {
-        throw "createUser Error: password must be 8+ characters long, include only uppercase letters, lowercase letters, and numbers, and must include 1 of each.";
+        throw "createUser Error: password must be 8+ characters long, include only uppercase letters, lowercase letters, and numbers, and must include at least 1 of each.";
     }
     const hashedPassword = bcrypt.hashSync(password, 10);
 
-    // Error checking "courses"
-    if (!courses) {
-        throw "createUser Error: No courses were supplied.";
+    // Error checking "completed_courses"
+    if (!completed_courses) {
+        throw "createUser Error: No completed_courses were supplied.";
     }
-    if (typeof courses !== "object") {
-        throw "createUser Error: courses must be an array.";
+    if (typeof completed_courses !== "object") {
+        throw "createUser Error: completed_courses must be an array.";
     }
-    if (!Array.isArray(courses)) {
-        throw "createUser Error: courses must be an array.";
+    if (!Array.isArray(completed_courses)) {
+        throw "createUser Error: completed_courses must be an array.";
     }
 
     // Calculate credits
     let credits = 0;
 
-    for (let course of courses.flat(Infinity)) {
+    for (let course of completed_courses.flat(Infinity)) {
         credits += (await getCourseByCode(course)).credits;
     }
 
@@ -64,8 +83,9 @@ const createUser = async (
         name,
         username,
         password: hashedPassword,
-        courses,
-        credits
+        completed_courses,
+        credits,
+        study_plans: []
     };
 
     // Insert new user to collection.
@@ -106,6 +126,14 @@ const getUserById = async (id) => {
     }
 
     return user;
+
+};
+
+const updateUserById = async (id) => {
+
+};
+
+const updateUserByEmail = async (email) => {
 
 };
 
