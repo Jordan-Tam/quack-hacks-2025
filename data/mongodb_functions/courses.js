@@ -104,6 +104,7 @@ const createCourse = async (
         specialization
     };
 
+    // Insert new course to collection.
     const coursesCollection = await courses();
 
     const insertedCourse = await coursesCollection.insertOne(newCourse);
@@ -161,7 +162,7 @@ const getCourseByCode = async (code) => {
     });
 
     if (!course) {
-        throw "getCourseByCode Error: No course with that id.";
+        throw "getCourseByCode Error: No course with that code.";
     }
 
     return course;
