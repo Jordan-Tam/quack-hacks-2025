@@ -1,0 +1,279 @@
+Course Code,Course Name,When Take (Term),Prereqs (courses),Prereqs (credits),Tags,Fall/Spring,Credits,CS Course Focus Area
+CS101,Research and Entrepreneurship in Computing,1,NULL,,Core,Fall,1,NULL
+CS115,Introduction to Computer Science,1,NULL,,Core,Both,3,NULL
+CS135,Discrete Structures,2,NULL,,Core,Both,4,NULL
+CS146,Introduction to Web Programming and Project Development,7,NULL,90,TechE,Fall,3,Application Development
+CS181,Introduction to Computer Science Honors,1,Permission,,Extra,Both,4,NULL
+CS188,Seminar in Computer Science,2,Pinnacle,,Extra,Spring,1,NULL
+CS284,Data Structures,2,CS115,,Core,Both,4,NULL
+CS334,Theory of Computation,5,"AND(CS135,CS385)",,Core,Fall,3,NULL
+CS347,Software Development Process,4+,"AND(CS115,CS284)",,TechE,Spring,3,Application Development
+CS370,Creative Problem Solving and Team Programming,4+,CS385,,TechE,Spring,3,Application Development
+CS382,Computer Architecture and Organization,3,CS284,,Core,Fall,4,NULL
+CS385,Algorithms,3,"OR(CS181,CS284)",,Core,Both,4,NULL
+CS392,Systems Programming,4,"AND(CS382,CS385)",,Core,Spring,3,NULL
+CS396,"Security, Privacy, and Society",5,CS392,,Core,Fall,4,NULL
+CS423,Senior Design I,7,CS385,90,Core,Fall,3,NULL
+CS424,Senior Design II,8,CS423,,Core,Spring,3,NULL
+CS442,Database Management Systems,4+,CS385,,TechE,Both,3,Theory
+CS488,Computer Architecture,4+,CS382,,TechE,Spring,3,Systems
+CS492,Operating Systems,5+,CS392,,TechE,Spring,3,Systems
+CS496,Principles of Programming Languages,4,CS496,,Core,Spring,3,NULL
+CS503,Discrete Mathematics for Cryptography,5+,CS135,60,TechE,Both,3,Cybersecurity
+CS522,Mobile Systems and Applications,,"OR(CS590,CS385)",60,TechE,Both,3,Application Development
+CS524,Introduction to Cloud Computing,5+,CS492,60,TechE,Spring,3,Systems
+CS526,Enterprise and Cloud Computing,5+,CS385,60,TechE,Fall,3,Application Development
+CS532,3D Computer Vision,5+,NULL,60,TechE,Fall,3,Artificial Intelligence
+CS537,Interactive Computer Graphics,5+,CS385,60,TechE,Both,3,
+CS539,"Real-Time Rendering, Gaming, and Similations Programming",5+,CS537,60,TechE,Both,3,Application Development
+CS541,Artificial Intelligence,5+,"AND(MA222,MA232)",60,TechE,Fall,3,Artificial Intelligence
+CS544,Health Informatics,5+,NULL,60,TechE,Spring,3,Artificial Intelligence
+CS545,Human Computer Interaction,,"OR(CS590,CS385)",60,TechE,Both,3,Application Development
+CS546,Web Programming,,"OR(CS182,OR(CS385,CS590))",,TechE,Both,3,Application Development
+CS548,Enterprise Software Architecture and Design,5+,CS385,60,TechE,Both,3,Application Development
+CS554,Web Programming II,,CS546,60,TechE,Both,3,Application Development
+CS557,Introduction to Natural Language Processing,5+,NULL,60,TechE,Both,3,Artificial Intelligence
+CS558,Computer Vision,5+,"AND(MA232,CS385)",60,TechE,Spring,3,Artificial Intelligence
+CS559,Machine Learning: Fundamentals and Applications,5+,"AND(MA222,MA232)",60,TechE,Both,3,Artificial Intelligence
+CS560,Statistical Machine Learning,5+,CS559,60,TechE,Both,3,Artificial Intelligence
+CS562,Database Management Systems II,5+,CS442,60,TechE,Both,3,Application Development
+CS566,Smartphone and Mobile Security,5+,CS385,60,TechE,Both,3,Application Development
+CS574,Object-Oriented Analysis and Design,5+,CS385,60,TechE,Both,3,Application Development
+CS576,Systems Security,5+,CS392,60,TechE,Fall,3,Systems
+CS577,Reverse Engineering and Application Analysis,5+,CS392,60,TechE,Fall,3,Systems
+CS578,Privacy in a Networked World,5+,"OR(CS579,CS594)",60,TechE,Both,3,Systems
+CS579,Foundations of Cryptography,5+,"AND(CS503,CS385)",60,TechE,Spring,3,Cybersecurity
+CS582,Causal Inference,5+,NULL,60,TechE,Fall,3,Artificial Intelligence
+CS583,Deep Learning,5+,MA232,60,TechE,Both,3,Artificial Intelligence
+CS584,Natural Language Processing,5+,MA232,60,TechE,Both,3,Artificial Intelligence
+CS594,Enterprise and Cloud Security,5+,"OR(CS526,CS548)",60,TechE,Both,3,Application Development
+CS595,Information Security and the Law,5+,"OR(CS579,CS594)",60,TechE,Spring,3,Systems
+CS596,Introduction to Windows Programming,5+,CS392,60,TechE,Spring,3,Systems
+CS597,User Experience Design and Programming,5+,NULL,60,TechE,Spring,3,Application Development
+CS601,Algorithmic Complexity,5+,"AND(CS334,CS385)",,TechE,Both,3,Theory
+CS609,Data Management and Exploration on the Web,5+,NULL,60,TechE,Spring,3,Application Development
+CS615,System Administration,5+,Permission,60,TechE,Spring,3,Systems
+CS643,Formal Verification of Software,5+,CS392,,TechE,Both,3,Theory
+CS665,Forensic Analysis,5+,CS392,,TechE,Spring,3,Systems
+CS676,Advanced Topics in Systems and Security,5+,CS576,,TechE,Spring,3,Systems
+CS677,Parallel Programming for Many Core Processors,5+,CS 392,,TechE,Spring,3,Systems
+CS693,Cryptographic Protocols,5+,CS 579,,TechE,Fall,3,Cybersecurity
+CS696,Database Security,5+,NULL,60,TechE,Both,3,Cybersecurity
+CS810,Special Topics in CS,5+,NULL,60,TechE,Both,3,NULL
+PEP111,Mechanics,1,NULL,,Science1,Both,3,NULL
+PEP112,Electricity and Magnetism,2,"AND(MA122,PEP111)",,Science2,Both,3,NULL
+PEP221,Physics Lab I for Scientists,2,PEP111,,ScienceL,Both,1,NULL
+CH115,General Chemistry I,"1,2",NULL,,Science1,Both,3,NULL
+CH116,General Chemistry II,2,CH115,,Science2,Both,3,NULL
+CH117,General Chemistry Laboratory I,2,CH115,,ScienceL,Both,1,NULL
+BIO181,Biology and Biotechnology,2,NULL,,Science2,Both,3,NULL
+BIO182,Biology and Biotechnology Laboratory,2,NULL,,ScienceL,Both,1,NULL
+MA121,Differential Calculus,1,NULL,,Core,Both,2,NULL
+MA122,Integral Calculus,1,MA121,,Core,Both,2,NULL
+MA125,Vectors and Matrices,2,MA122,,Core,Both,2,NULL
+MA126,Multivariable Calculus I,2,MA125,,Core,Both,2,NULL
+MA222,Probability and Statistics,3,"OR(MA124,MA126)",,Core,Both,3,NULL
+,Linear Algebra,3+,NULL,30,MathsciE,Fall,3,NULL
+MA331,Intermediate Statistics,4,MA222,,Core,Both,3,NULL
+HASS103,Writing and Communications Colloquium,1,NULL,,Core,Both,3,NULL
+HASS105,"Knoweledge, Nature, Culture",2,NULL,,Core,Both,3,NULL
+PRV101,First Year Experience,1,NULL,,Core,Both,1,NULL
+PRV201,Frontiers of Technology: AI and Machine Learning,"2,3",NULL,,Core,Both,1,NULL
+PRV202,Frontiers of Technology: Data Science and Analytics,"2,3",NULL,,Core,Both,1,NULL
+PRV203,Frontiers of Technology: Biotechnology,"2,3",NULL,,Core,Both,1,NULL
+PRV204,Frontiers of Technology: Sustainability,"2,3",NULL,,Core,Both,1,NULL
+PRV205,Frontiers of Technology: Quantum Technology,"2,3",NULL,,Core,Both,1,NULL
+MGT103,Introduction to Entrepreneuial Thinking,3,NULL,,Core,Both,1,NULL
+HPL455,Ethical Issues in Science and Technology,5,NULL,,Core,Both,2,NULL
+HSS371,Computers and Society,5,NULL,,Core,Both,3,NULL
+HMU101,Hisotry of European Music I,4+,NULL,,HumanitiesE,Fall,3,NULL
+HMU102,Hisotry of European Music II,4+,NULL,,HumanitiesE,Spring,3,NULL
+HMU192,Music Appreciation I,4+,NULL,,HumanitiesE,Fall,3,NULL
+HMU193,Music Appreciation II,4+,HMU192,,HumanitiesE,Both,3,NULL
+HMU194,History of American Popular Music,4+,NULL,,HumanitiesE,Both,3,NULL
+HMU195,History of Electronic and Experimental Music,4+,NULL,,HumanitiesE,Both,3,NULL
+HMU350,Music of Eastern Mediterranean,4+,NULL,,HumanitiesE,Both,3,NULL
+HMU394,History of Jazz,4+,NULL,,HumanitiesE,Both,3,NULL
+HMU494,Seminar in Music and Technology,4+,Permission,,HumanitiesE,Both,3,NULL
+HAR180,History of Art: Prehistory to Modern Era,4+,NULL,,HumanitiesE,Both,3,NULL
+HAR280,Modern Art History and Theory,4+,NULL,,HumanitiesE,Both,3,NULL
+HAR281,History of Photography,4+,NULL,,HumanitiesE,Spring,3,NULL
+HAR282,History of Middle Eastern Art,4+,NULL,,HumanitiesE,Both,3,NULL
+HAR372,Technology and the Landscape,4+,NULL,,HumanitiesE,Fall,3,NULL
+HAR380,Media Culture and Theory,4+,NULL,,HumanitiesE,Fall,3,NULL
+HAR385,Contemporary Art,4+,NULL,,HumanitiesE,Spring,3,NULL
+HAR494,Seminar in Art and Technology,4+,Permission,,HumanitiesE,Both,3,NULL
+LSP305,Latin American Literature and Culture,4+,"AND(LSP201,LSP202)",,HumanitiesE,Both,3,NULL
+LSP310,Spanish Literature and Culture,4+,"AND(LSP201,LSP202)",,HumanitiesE,Both,3,NULL
+HTH201,Introduction to Theater,4+,NULL,,HumanitiesE,Both,3,NULL
+HTH221,Introduction to Cinema,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST120,Intro to Science & Technology Studies,4+,NULL,,HumanitiesE,Both,3,NULL
+HST140,Failure,4+,NULL,,HumanitiesE,Both,3,NULL
+HST160,Science Communication,4+,NULL,,HumanitiesE,Both,3,NULL
+HST250,Medical Humanities,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST320,Science and Media,4+,NULL,,HumanitiesE,Both,3,NULL
+HST325,Visualizing Society,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST330,Environmental Communication,4+,NULL,,HumanitiesE,Both,3,NULL
+HST340,Global Public Health,4+,NULL,30,HumanitiesE,Both,3,NULL
+HST350,Medical Anthropology,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST355,Technology & Medicine,4+,NULL,,HumanitiesE,Both,3,NULL
+HST360,Humans and the Environment,4+,"OR(HHS130,OR(HHS371,HST120))",,HumanitiesE,Spring,3,NULL
+HST370,Biology and Society,4+,NULL,,HumanitiesE,Both,3,NULL
+HST380,Standardization and Society,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST385,Internet Protocols and Politics,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST390,Anthropology of Technology,4+,NULL,,HumanitiesE,Fall,3,NULL
+HST401,Seminar in Science Writing,4+,NULL,,HumanitiesE,Both,3,NULL
+HST404,Computing and Capitalism,4+,"OR(HST120,HSS371)",,HumanitiesE,Spring,3,NULL
+HST411,Nuclear Energy and Society,4+,NULL,,HumanitiesE,Both,3,NULL
+HST415,The Nuclear Era,4+,NULL,,HumanitiesE,Both,3,NULL
+HST450,The History of Stevens,4+,NULL,,HumanitiesE,Spring,3,NULL
+HST470,War and Science,4+,NULL,,HumanitiesE,Both,3,NULL
+HST495,Seminar in STS,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS121,Introduction to Urban Studies,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS127,Intro to Poli Sci I,4+,NULL,,HumanitiesE,Fall,3,NULL
+HSS131,Introduction to Anthropology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS141,Intro to Sociology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS175,Fundamentals of Psychology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS231,Cultural Anthropology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS280,Social Psychology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS321,Modern Urban Policy,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS324,Comparative Ethnic Culture,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS325,Identity Politics and Legal Theory,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS330,Developmental Psychology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS331,Biological Psychology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS332,Health Psychology,4+,NULL,,HumanitiesE,Fall,3,NULL
+HSS333,Psychology of Prejudice,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS360,Public Policy Analysis,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS361,The US Congress,4+,NULL,,HumanitiesE,Fall,3,NULL
+HSS362,Campaigns and Elections,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS366,Political Theory,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS370,Data Storytelling,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS373,Social Choice Theory,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS375,History of Psychology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS376,Theories of Personality,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS377,Sociology of Globalization,4+,NULL,,HumanitiesE,Fall,3,NULL
+HSS379,International Politics,4+,NULL,,HumanitiesE,Spring,3,NULL
+HSS401,Seminar in Leadership Studies,4+,NULL,,HumanitiesE,Fall,3,NULL
+HSS402,Political Psychology and the Media,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS441,Gender and Race in Science and Engineering,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS458,Sociology of Science and Technology,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS477,Psychology of Religion,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS478,Psychology of Gender,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS479,Sociology of Gender,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS489,Freud and Jung,4+,HSS376,,HumanitiesE,Both,3,NULL
+HSS496,Seminar in Social Science,4+,NULL,,HumanitiesE,Both,3,NULL
+HHS125,US History to 1865,4+,NULL,,HumanitiesE,Fall,3,NULL
+HHS130,History of Science & Technology,4+,NULL,,HumanitiesE,Both,3,NULL
+HHS135,Survey of the Islamic World,4+,NULL,,HumanitiesE,Both,3,NULL
+HSS325,African American Studies,4+,NULL,,HumanitiesE,Both,3,NULL
+HHS373,US Constitutional Law II,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI105,Speical Topics in Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI113,Western Literature: Classical Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI114,Western Literature: Middle Ages to the Present,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI115,The English Language: Language of Ideas,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI116,Analysis of Literary Forms,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI118,Realist and Modern American Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI220,Images of Science in Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI221,Introduction to Cinema,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI302,African-American Cinema,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI305,Director as Auteur,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI307,Afrofuturism,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI312,Modern Literature,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI313,Wordsworth and English Romanticism,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI314,19th Century English Literature: Victorians,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI316,Science Fiction,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI318,Caribbean Literature and Culture,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI319,Ethnicity and Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI321,"Literature, Science and Technology",4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI330,Classical Mythology,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI331,Shakespeare,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI334,Chaucer: The Journey and the Dreams,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI335,Shakespeare in the City,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI338,Thoreau and Environmental Writing,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI366,The Short Story,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI337,History of the English Language,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI341,19th Century English Literature: Romanticism,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI342,Modern Drama,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI344,British Fiction,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI345,A Survey of Dramatic Literature,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI348,James Baldwin,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI349,American Poetry to 1900,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI351,"Romanticism: Painting, Literature, Music",4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI352,The American Renaissance in Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI354,American Culture,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI357,American Films & American Fiction,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI358,American Poetry: 20th Century,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI363,Modern Irish Literature,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI370,Introduction to Journalism,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI380,Survey of Latin American Literature,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI390,Modern Culture: Literature and Film,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI391,Queer Fiction,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI408,Creative Writing,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI409,Rhetoric and Technical Writing,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI410,"Wanderers, Warriors, Sinners, and Saints: Medieval Literature",4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI412,Medieval Romances: Rise of the Individual,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI413,Literature by Women: The Tradition in English,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI414,Literature and Empire,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI415,The Bible as Literature,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI416,The Legend of King Arthur,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI417,English Literature: A Survey from Beowulf to the Restoration,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI418,Literature and Critical Theory,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI421,"Power and Politics, Kinship and Kings I: Ancient to Renaissance",4+,NULL,,HumanitiesE,Both,3,NULL
+HLI446,English Literature: Restoration (1660) to the Present,4+,NULL,,HumanitiesE,Both,3,NULL
+HLI447,Survey of British Literature,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI471,Literature and the Arts,4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI474,The Novel in America,4+,NULL,,HumanitiesE,Fall,3,NULL
+HLI476,"Contemporary Culture: Literature and Film, 1950-the Present",4+,NULL,,HumanitiesE,Spring,3,NULL
+HLI495,Seminar in Literature,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL111,Theories of Human Nature,4+,NULL,30,HumanitiesE,Both,3,NULL
+HPL112,Science and Metaphysics,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL210,Eastern Philosophy,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL339,Ethics,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL340,Social and Political Philosophy,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL341,Philosophies of Good and Evil,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL346,Modern Philosophy,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL347,Theories of Knowledge and Reality,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL348,Aesthetics,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL350,Ancient and Medieval Philosophy,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL367,Philosophy of Biology,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL368,Philosophy of Science,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL369,Science and Religion,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL370,Philosophy of Technology,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL371,Philosophy of Time,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL380,Environmental Ethics,4+,NULL,,HumanitiesE,Spring,3,NULL
+HPL442,Logic,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL443,The Philosophy of Language,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL444,Philosophy of Mind,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL445,The History of Philosophy,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL447,"Marx, Nietzsche, Freud: The Modern Individual and Society",4+,NULL,,HumanitiesE,Both,3,NULL
+HPL448,Contemporary Philosophy,4+,NULL,,HumanitiesE,Spring,3,NULL
+HPL449,Philosophy of Law,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL450,Global and International Ethics,4+,NULL,30,HumanitiesE,Both,3,NULL
+HPL455,Ethical Issues in Science and Technology,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL456,Ethics of Business and Technology,4+,NULL,,HumanitiesE,Spring,3,NULL
+HPL457,Bioethics,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL458,Computability and Logic,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL459,The Philosophy of Social Science,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL460,Philosophy and Feminism,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL461,American Philosophy,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL463,Existentialism,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL464,Philosophy in Film,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL468,Women Philosophers of the Twentieth Century,4+,NULL,,HumanitiesE,Fall,3,NULL
+HPL480,Environmental Policy: Philosophical and Economic Issues,4+,NULL,,HumanitiesE,Both,3,NULL
+HPL495,Seminar in Philosophy,4+,NULL,,HumanitiesE,Spring,3,NULL
+LCH101,Beginning Chinese I,4+,NULL,,HumanitiesE,Spring,3,NULL
+LCH102,Beginning Chinese II,4+,NULL,,HumanitiesE,Fall,3,NULL
+LFR101,Beginning French I,4+,NULL,,HumanitiesE,Both,3,NULL
+LFR202,Intermediate French II,4+,NULL,,HumanitiesE,Spring,3,NULL
+LSP101,Beginning Spanish I,4+,NULL,,HumanitiesE,Both,3,NULL
+LSP102,Beginning Spanish II,4+,NULL,,HumanitiesE,Both,3,NULL
+LSP201,Intermediate Spanish I,4+,NULL,,HumanitiesE,Both,3,NULL
+LSP202,Intermediate Spanish II,4+,NULL,,HumanitiesE,Both,3,NULL
+CH 243 ,Organic Chemistry I,,"AND(CH116,CH118)",,MathsciE,Fall,3,NULL
+BIO181,Biology and Biotechnology,,NULL,,MathsciE,Both,3,NULL
+PEP151,Introduction to Astronomy,,NULL,,MathsciE,Both,3,NULL
+PEP152,Introduction to Astrobiology,,NULL,,MathsciE,Both,3,NULL
+MA221 ,Differential Equations,,MA126,,MathsciE,Both,3,NULL
+MA225,Infinite Series,,MA122 ,,MathsciE,Both,3,NULL
+MA226,Multivariable Calculus,,MA126,,MathsciE,Both,3,NULL
+MA236,Introduction to Mathematical Logic,,NULL,,MathsciE,Both,3,NULL
