@@ -6,27 +6,24 @@ function isTerm(maybe) {
 }
 
 /*
-    Input: "CS385 AND (CS182 OR CS115)"
-    Output: "AND(CS385, OR(CS182, CS115))"
-
-
+    Input: "AND(CS385, OR(CS182, CS115))"
     Output: {op: "and", a: "CS385", b: {op: "or", a: "CS182", b: "CS115"}}
 */
 
-function parsePreReqs(expr) {
+export function parseExpr(expr) {
     expr = expr.trim();
 
+    if (expr == 'NULL') return null;
     if (!expr.includes('(')) return expr;
 
     const match = expr.match(/^([A-Z]+)\((.*)\)$/);
-    console.log(match);
 
     const op = match[1].toLowerCase();
     const argsStr = match[2];
 
-    let depth = 0,
-        args = [],
-        current = '';
+    let depth = 0;
+    let args = [];
+    let current = '';
     for (let char of argsStr) {
         if (char === ',' && depth === 0) {
             args.push(current.trim());
@@ -44,8 +41,8 @@ function parsePreReqs(expr) {
 
     return {
         op,
-        a: parseExpression(args[0]),
-        b: parseExpression(args[1]),
+        a: parseExpr(args[0]),
+        b: parseExpr(args[1]),
     };
 }
 
@@ -70,5 +67,3 @@ function eligible(f, p) {
         return e_a || e_b;
     }
 }
-
-console.log(parsePreReqs('CS385 AND (CS182 OR CS115)'));
