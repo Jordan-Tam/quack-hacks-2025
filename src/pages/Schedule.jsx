@@ -2,29 +2,33 @@ import { useState } from 'react';
 import Select from 'react-select';
 import { eligible } from '../../data/database/select_courses'; // Import your eligibility check
 
-// 🎓 Course catalog
-const courseCatalog = {
-    CS101: { name: 'Intro to Programming', type: 'Core Courses', prereqs: [] },
-    CS102: {
-        name: 'Data Structures',
-        type: 'Core Courses',
-        prereqs: ['CS101'],
-    },
-    CS392: {
-        name: 'Systems Programming',
-        type: 'Core Courses',
-        prereqs: ['CS102'],
-    },
-    CS450: { name: 'AI', type: 'Tech Electives', prereqs: ['CS392'] },
-    CS460: { name: 'Security', type: 'Tech Electives', prereqs: ['CS392'] },
-    HIST101: { name: 'US History', type: 'Humanities', prereqs: [] },
-    PHIL202: { name: 'Ethics', type: 'Humanities', prereqs: [] },
-    MATH201: { name: 'Discrete Math', type: 'Math', prereqs: [] },
-    BIO150: { name: 'Biology Basics', type: 'Science', prereqs: [] },
-};
+let courseCatalog;
 
-// 📘 Specific requirements (must take these exact courses)
-const specificCoursesRequired = ['CS101', 'CS102', 'CS392'];
+try {
+    const response = await fetch('http://localhost:4000/course', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+
+    const data = await response.json();
+    console.log(data);
+
+    if (!response.ok) console.error(`Error: ${data.message}`);
+
+    courseCatalog = response.body;
+} catch (err) {
+    console.error('Network error: ', err);
+}
+
+const specificCoursesRequired = [];
+
+for (course of courseCatalog) {
+    if (course.tags.includes('Core')) {
+        specificCoursesRequired.push(course.code);
+    }
+}
 
 // 📘 General requirements (can fulfill with *any* from a type)
 const generalRequirements = {
