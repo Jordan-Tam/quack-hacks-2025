@@ -1,32 +1,26 @@
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import './Navbar.css';
-const Home = () => <h2>Home</h2>
-const Login = () => <h2>Login</h2>
+import './Header.css';
+import Home from '../pages/Home';
+import Login from '../pages/Login';
+import Course from '../pages/Course';
+
 const Header = () => {
     return (
         <>
-            <header>
-                <Router>
-                    <div>
-                        <nav>
-                        <ul>
-                            <li>
+            <header class="header">
+                <nav>
+                    <ul>
+                        <li>
                             <Link to="/">Home</Link>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
                             <Link to="/about">About</Link>
-                            </li>
-                            <li>
-                            <Link to="/contact">Contact</Link>
-                            </li>
-                        </ul>
-                        </nav>
-                        <Route path="/" exact component={Home} />
-                        <Route path="/about" component={About} />
-                        <Route path="/contact" component={Contact} />
-                    </div>
-                </Router>
-
+                        </li>
+                        <li>
+                            <Link to="/course/CS392">CS392</Link>
+                        </li>
+                    </ul>
+                </nav>
             </header>
         </>
     );

@@ -3,18 +3,16 @@ import { Route, Routes, Link, useNavigate } from 'react-router';
 import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Header from './components/Header';
+import Course from './pages/Course';
 
 const App = () => {
     return (
         <div>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/login">Login</Link>
-            </nav>
-
             <Routes>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/login" element={<Login />}></Route>
+                <Route path="/" exact element={<Home />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/course/:courseCode" element={<Course />}></Route>
             </Routes>
         </div>
     );
