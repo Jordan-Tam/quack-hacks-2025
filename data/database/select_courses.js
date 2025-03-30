@@ -46,9 +46,23 @@ export function parseExpr(expr) {
     };
 }
 
+export function unparseExpr(expr) {
+    if (typeof expr === 'string') return expr;
+    if (!expr) return 'None';
+    console.log(expr);
+
+    const op = expr.op.toUpperCase();
+    const a = unparseExpr(expr.a);
+    const b = unparseExpr(expr.b);
+
+    return `${op}(${a}, ${b})`;
+}
+
 export function eligible(f, p) {
     let e_a, e_b;
-    if (isTerm(f.a) && isTerm(f.b)) {
+    if (typeof f !== 'object') {
+        return true;
+    } else if (isTerm(f.a) && isTerm(f.b)) {
         e_a = p.includes(f.a);
         e_b = p.includes(f.b);
     } else if (isTerm(f.a) && !isTerm(f.b)) {

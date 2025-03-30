@@ -32,17 +32,15 @@ app.post('/login', (req, res) => {
 app.get('/course', async (req, res) => {
     try {
         const courses = await getAllCourses();
-        console.log(courses);
+        // console.log(courses);
         res.json(courses);
     } catch (err) {
-        console.error(err);
+        // console.error(err);
         res.status(500).json({
             success: false,
-            message: err,
+            message: err.message,
         });
     }
-
-    res.json();
 });
 
 app.listen(PORT, () => {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Select from 'react-select';
-import { eligible } from '../../data/database/select_courses'; // Import your eligibility check
+import { eligible, unparseExpr } from '../../data/database/select_courses'; // Import your eligibility check
 
 let courseCatalog;
 
@@ -13,28 +13,35 @@ try {
     });
 
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
 
     if (!response.ok) console.error(`Error: ${data.message}`);
 
-    courseCatalog = response.body;
+    courseCatalog = data;
 } catch (err) {
     console.error('Network error: ', err);
 }
 
 const specificCoursesRequired = [];
 
-for (course of courseCatalog) {
+for (let course of courseCatalog) {
     if (course.tags.includes('Core')) {
         specificCoursesRequired.push(course.code);
     }
 }
 
-// 📘 General requirements (can fulfill with *any* from a type)
 const generalRequirements = {
     Humanities: 1,
     'Tech Electives': 2,
 };
+
+function getPreReqsFromCode(code) {
+    for (let course of courseCatalog) {
+        if (course.code === code) {
+            return course.prereqs;
+        }
+    }
+}
 
 // 🔁 Helper to get all course options still available
 function getRemainingCourses(allSelected) {
@@ -73,7 +80,7 @@ const Schedule = () => {
         .filter((code) => !allSelected.includes(code))
         .map((code) => ({
             value: code,
-            label: `${code} - ${courseCatalog[code].name}`,
+            label: `${courseCatalog[code].code} - ${courseCatalog[code].name}`,
         }));
 
     const handleAddCourse = (semesterIndex) => {
@@ -162,7 +169,7 @@ const Schedule = () => {
                                               value: selectedCourses[
                                                   semesterIndex
                                               ],
-                                              label: `${selectedCourses[semesterIndex]} - ${courseCatalog[selectedCourses[semesterIndex]].name}`,
+                                              label: `${courseCatalog[selectedCourses[semesterIndex]].code} - ${courseCatalog[selectedCourses[semesterIndex]].name}`,
                                           }
                                         : null
                                 }
@@ -209,7 +216,7 @@ const Schedule = () => {
                                 {courses.map((code) => {
                                     const course = courseCatalog[code];
                                     const isEligible = eligible(
-                                        code,
+                                        getPreReqsFromCode(course),
                                         previousCourses
                                     );
                                     return (
@@ -224,11 +231,20 @@ const Schedule = () => {
                                                     : {}
                                             }
                                         >
-                                            <td>{code}</td>
+                                            <td>{course.code}</td>
                                             <td>{course.name}</td>
                                             <td>
-                                                {course.prereqs.join(', ') ||
-                                                    'None'}
+                                                {(() => {
+                                                    const str = unparseExpr(
+                                                        course.prereqs.courses
+                                                    );
+                                                    if (
+                                                        typeof str == 'object'
+                                                    ) {
+                                                        return str.join(', ');
+                                                    }
+                                                    return str; // assume it's a string
+                                                })()}
                                             </td>
                                             <td>{course.type}</td>
                                         </tr>
