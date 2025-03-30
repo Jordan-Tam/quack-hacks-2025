@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 import { getAllCourses } from '../data/mongodb_functions/courses.js';
 
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -32,7 +32,7 @@ app.post('/login', (req, res) => {
 app.get('/course', async (req, res) => {
     try {
         const courses = await getAllCourses();
-        // console.log(courses);
+        console.log(courses);
         res.json(courses);
     } catch (err) {
         // console.error(err);

@@ -7,7 +7,7 @@ import Course from '../pages/Course';
 const Header = () => {
     return (
         <>
-            <header class="header">
+            <header className="header">
                 <nav>
                     <ul>
                         <li>

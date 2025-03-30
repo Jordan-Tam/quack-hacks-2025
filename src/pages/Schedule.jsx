@@ -5,7 +5,8 @@ import { eligible, unparseExpr } from '../../data/database/select_courses'; // I
 let courseCatalog;
 
 try {
-    const response = await fetch('http://localhost:4000/course', {
+    
+    const response = await fetch('http://localhost:3000/course', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -18,11 +19,14 @@ try {
     if (!response.ok) console.error(`Error: ${data.message}`);
 
     courseCatalog = data;
+
 } catch (err) {
-    console.error('Network error: ', err);
+    console.error('Network error: ', err); //
 }
 
 const specificCoursesRequired = [];
+
+console.log(courseCatalog);
 
 for (let course of courseCatalog) {
     if (course.tags.includes('Core')) {
