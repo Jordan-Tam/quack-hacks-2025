@@ -28,7 +28,7 @@ for (let course of data) {
 // Seed users collection with students.
 try {
     await createUser(
-        "Sliminy Jard",
+        "Sliminy Jardet",
         "sjard",
         "ImBeginningToFeelLikeARunGodDoneGod1",
         [
@@ -50,6 +50,20 @@ try {
             ["HASS105", "CS135", "CS284"],
             ["CS382", "CS385", "CS347"],
             ["CS392", "CS396", "CS492", "CS496"]
+        ]
+    );
+} catch (e) {
+    console.log(e);
+}
+
+try {
+    await createUser(
+        "Real Slim Jardy",
+        "sjardy",
+        "IstandUp420",
+        [
+            ["CS392", "CS115", "CS492"],
+            ["CS496", "CS385", "CS347"],
         ]
     );
 } catch (e) {
