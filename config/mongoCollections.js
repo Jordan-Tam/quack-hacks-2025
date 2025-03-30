@@ -13,4 +13,4 @@ const getCollection = (collection) => {
 };
 
 export const courses = getCollection("courses");
-export const students = getCollection("students");
+export const users = getCollection("users");
