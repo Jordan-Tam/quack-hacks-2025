@@ -1,69 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Select from 'react-select';
-import { eligible, unparseExpr } from '../../data/database/select_courses'; // Import your eligibility check
-
-let courseCatalog;
-
-try {
-    const response = await fetch('http://localhost:4000/course', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
-
-    const data = await response.json();
-    // console.log(data);
-
-    if (!response.ok) console.error(`Error: ${data.message}`);
-
-    courseCatalog = data;
-} catch (err) {
-    console.error('Network error: ', err);
-}
-
-const specificCoursesRequired = [];
-
-for (let course of courseCatalog) {
-    if (course.tags.includes('Core')) {
-        specificCoursesRequired.push(course.code);
-    }
-}
-
-const generalRequirements = {
-    Humanities: 1,
-    'Tech Electives': 2,
-};
-
-function getPreReqsFromCode(code) {
-    for (let course of courseCatalog) {
-        if (course.code === code) {
-            return course.prereqs;
-        }
-    }
-}
-
-// 🔁 Helper to get all course options still available
-function getRemainingCourses(allSelected) {
-    const remainingSpecific = specificCoursesRequired.filter(
-        (code) => !allSelected.includes(code)
-    );
-
-    const generalRemaining = { ...generalRequirements };
-    for (const code of allSelected) {
-        const course = courseCatalog[code];
-        if (course && generalRemaining[course.type]) {
-            generalRemaining[course.type] -= 1;
-            if (generalRemaining[course.type] <= 0) {
-                delete generalRemaining[course.type];
-            }
-        }
-    }
-
-    return { remainingSpecific, generalRemaining };
-}
+import { eligible, unparseExpr } from '../../data/database/select_courses';
 
 const Schedule = () => {
+    const [courseCatalog, setCourseCatalog] = useState([]);
     const [semesterCourses, setSemesterCourses] = useState(
         Array(8)
             .fill()
@@ -71,17 +11,23 @@ const Schedule = () => {
     );
     const [selectedCourses, setSelectedCourses] = useState(Array(8).fill(null));
 
-    const allSelected = semesterCourses.flat();
-
-    const { remainingSpecific, generalRemaining } =
-        getRemainingCourses(allSelected);
-
-    const availableOptions = Object.keys(courseCatalog)
-        .filter((code) => !allSelected.includes(code))
-        .map((code) => ({
-            value: code,
-            label: `${courseCatalog[code].code} - ${courseCatalog[code].name}`,
-        }));
+    // 📥 Fetch course data
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('http://localhost:4000/course');
+                const data = await response.json();
+                if (!response.ok) {
+                    console.error(`Error: ${data.message}`);
+                } else {
+                    setCourseCatalog(data);
+                }
+            } catch (err) {
+                console.error('Network error:', err);
+            }
+        };
+        fetchData();
+    }, []);
 
     const handleAddCourse = (semesterIndex) => {
         const selected = selectedCourses[semesterIndex];
@@ -110,42 +56,21 @@ const Schedule = () => {
         });
     };
 
+    const availableOptions = courseCatalog.map((course) => ({
+        value: course.code,
+        label: `${course.code} - ${course.name}`,
+    }));
+
     return (
         <div style={{ padding: '20px' }}>
             <h1>Course Schedule</h1>
-
-            {/* 🧮 Remaining Requirements */}
-            <h2>Remaining Requirements</h2>
-            <table
-                border="1"
-                cellPadding="8"
-                style={{ width: '100%', marginBottom: '30px' }}
-            >
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Remaining</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Specific Courses</td>
-                        <td>{remainingSpecific.join(', ') || '✓'}</td>
-                    </tr>
-                    {Object.entries(generalRemaining).map(([type, count]) => (
-                        <tr key={type}>
-                            <td>{type}</td>
-                            <td>{count} remaining</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
 
             {/* 📅 Semester Tables */}
             {semesterCourses.map((courses, semesterIndex) => {
                 const previousCourses = semesterCourses
                     .slice(0, semesterIndex)
                     .flat();
+
                 return (
                     <div key={semesterIndex} style={{ marginBottom: '35px' }}>
                         <h2>Semester {semesterIndex + 1}</h2>
@@ -169,7 +94,17 @@ const Schedule = () => {
                                               value: selectedCourses[
                                                   semesterIndex
                                               ],
-                                              label: `${courseCatalog[selectedCourses[semesterIndex]].code} - ${courseCatalog[selectedCourses[semesterIndex]].name}`,
+                                              label:
+                                                  courseCatalog.find(
+                                                      (c) =>
+                                                          c.code ===
+                                                          selectedCourses[
+                                                              semesterIndex
+                                                          ]
+                                                  )?.name ||
+                                                  selectedCourses[
+                                                      semesterIndex
+                                                  ],
                                           }
                                         : null
                                 }
@@ -214,9 +149,11 @@ const Schedule = () => {
                                     </tr>
                                 )}
                                 {courses.map((code) => {
-                                    const course = courseCatalog[code];
+                                    const course = courseCatalog.find(
+                                        (c) => c.code === code
+                                    );
                                     const isEligible = eligible(
-                                        getPreReqsFromCode(course),
+                                        course?.prereqs,
                                         previousCourses
                                     );
                                     return (
@@ -231,22 +168,22 @@ const Schedule = () => {
                                                     : {}
                                             }
                                         >
-                                            <td>{course.code}</td>
-                                            <td>{course.name}</td>
+                                            <td>{course?.code}</td>
+                                            <td>{course?.name}</td>
                                             <td>
                                                 {(() => {
-                                                    const str = unparseExpr(
-                                                        course.prereqs.courses
-                                                    );
-                                                    if (
-                                                        typeof str == 'object'
-                                                    ) {
-                                                        return str.join(', ');
-                                                    }
-                                                    return str; // assume it's a string
+                                                    const expr =
+                                                        course?.prereqs
+                                                            ?.courses;
+                                                    const str = expr
+                                                        ? unparseExpr(expr)
+                                                        : '';
+                                                    return Array.isArray(str)
+                                                        ? str.join(', ')
+                                                        : str;
                                                 })()}
                                             </td>
-                                            <td>{course.type}</td>
+                                            <td>{course?.type}</td>
                                         </tr>
                                     );
                                 })}

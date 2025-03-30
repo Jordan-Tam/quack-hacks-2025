@@ -60,6 +60,7 @@ export function unparseExpr(expr) {
 
 export function eligible(f, p) {
     let e_a, e_b;
+    console.log(`Prereqs ${f} with previous courses ${p}`);
     if (typeof f !== 'object') {
         return true;
     } else if (isTerm(f.a) && isTerm(f.b)) {
