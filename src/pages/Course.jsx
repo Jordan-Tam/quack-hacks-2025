@@ -1,6 +1,8 @@
+import { useParams } from 'react-router';
+
 const Course = () => {
     const { courseCode } = useParams();
-    const course = {
+    const c = {
         name: 'Systems Programming',
         code: 'CS392',
         credits: 3,
@@ -13,7 +15,7 @@ const Course = () => {
         specialization: null,
     };
 
-    if (!course) return <p>Course not found!</p>;
+    if (!c) return <p>Course not found!</p>;
 
     return (
         <div>
