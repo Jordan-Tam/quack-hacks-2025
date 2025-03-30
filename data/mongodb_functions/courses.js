@@ -144,4 +144,28 @@ const getCourseById = async (id) => {
 
 };
 
-export {createCourse, getCourseById}
+const getCourseByCode = async (code) => {
+
+    if(!code) {
+        throw "getCourseByCode Error: No code was supplied.";
+    }
+    if (typeof code !== "string") {
+        throw "getCourseByCode Error: code must be a string.";
+    }
+    code = code.trim();
+
+    const coursesCollection = await courses();
+
+    const course = await coursesCollection.findOne({
+        code: code
+    });
+
+    if (!course) {
+        throw "getCourseByCode Error: No course with that id.";
+    }
+
+    return course;
+
+};
+
+export {createCourse, getCourseById, getCourseByCode}
