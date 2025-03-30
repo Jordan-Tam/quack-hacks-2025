@@ -46,7 +46,7 @@ export function parseExpr(expr) {
     };
 }
 
-function eligible(f, p) {
+export function eligible(f, p) {
     let e_a, e_b;
     if (isTerm(f.a) && isTerm(f.b)) {
         e_a = p.includes(f.a);

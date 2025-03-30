@@ -1,11 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import { getAllCourses } from '../data/mongodb_functions/courses.js';
 
 const app = express();
 const PORT = 4000;
 
 app.use(cors());
+app.use(express.json());
 app.use(bodyParser.json());
 
 const exampleUser = {
@@ -25,6 +27,22 @@ app.post('/login', (req, res) => {
             message: 'Invalid credentials',
         });
     }
+});
+
+app.get('/course', async (req, res) => {
+    try {
+        const courses = await getAllCourses();
+        console.log(courses);
+        res.json(courses);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({
+            success: false,
+            message: err,
+        });
+    }
+
+    res.json();
 });
 
 app.listen(PORT, () => {
