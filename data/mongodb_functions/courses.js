@@ -128,7 +128,7 @@ const createCourse = async (
 const getAllCourses = async () => {
     const coursesCollection = await courses();
 
-    const course_list = await coursesCollection.find({});
+    const course_list = await coursesCollection.find({}).toArray();
     console.log(course_list);
 
     if (!course_list) {
