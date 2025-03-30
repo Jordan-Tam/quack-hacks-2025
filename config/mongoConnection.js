@@ -5,7 +5,7 @@ let _database = undefined;
 
 const mongoConfig = {
     serverUrl: 'mongodb://localhost:27017/',
-    database: 'advancedApiBasedBlog'
+    database: 'quack-hacks-2025'
   };
 
 const databaseConnection = async () => {
